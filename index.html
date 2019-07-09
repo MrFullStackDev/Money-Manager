@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      body{
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+  </style>
+</head>
+<body>
+  <!--Header-->
+  <header class="jumbotron">
+    <div class="text-center" style="margin-top: 50px;">
+        <h1 class="text-uppercase text-danger font-weight-bold">Money Manager</h1>
+        <p class="font-italic font-weight-bold st">A Simple Savings Calculator For Your Monthly Budget.</p>
+    </div>
+  </header> 
+<!--Header closed-->
+<!--Col 1-->
+  <div class = container-fluid>
+    <div class = "row">
+      <div class = "col-sm-4">
+        <div class="jumbotron"> 
+            <h4>How to Enter Savings Rate?</h4>
+            <p> Savings Rate here is calculated as income * rate. For example- Your Income is <strong> 1000 </strong> and you want to save <strong> 20% </strong> of it then your savings rate will be <strong>.20</strong>.
+                Please make sure you enter this correctly, else results may be inaccurate.
+            <br><br>
+            <h5>Essential Expenses</h5>
+            <p> The expenses which are a necessity and are recurring in nature. </p>
+            <h5>Optional Expenses</h5>
+            <p> The expenses which include Movies, Dine-outs, Subscriptions, Shopping and other activities which may or may not happen every month.</p>
+            <br> 
+            <p><strong>Put 0 if any field is of no use.</strong></p>
+            <p><strong>No personal information is collected by any means.</strong></p>
+        </div>
+    </div>
+<!--Col 1 Closed-->
+<!--Col 2-->
+      <div class="col-sm-4 col-md-4">
+        <form class="shadow-lg p-4 text-white">
+          <div class="form-group">
+            <label class="pl-2 font-weight-bold">Savings Rate (in Decimal)</label><input type="text" class="form-control" id="rate">
+          </div>
+          <hr>
+          <div class="form-group">
+            <label class="pl-2 font-weight-bold">Monthly Income (in ₹)</label><input type="text" class="form-control" id="income">
+          </div>
+          <hr>
+          <h4>Essential Expenses</h4><br>
+          <div class = "form-group">
+            <label class="pl-2 font-weight-bold">House Rent</label><input type="text" class="form-control" id="rent"><br>
+            <label class="pl-2 font-weight-bold">Grocery</label><input type="text" class="form-control" id="groceries"><br>
+            <label class="pl-2 font-weight-bold">Health Care</label><input type="text" class="form-control" id="care"><br>
+            <label class="pl-2 font-weight-bold">Transportation</label><input type="text" class="form-control" id="auto"><br>
+            <label class="pl-2 font-weight-bold">Loans</label><input type="text" class="form-control" id="insurance">
+          </div>
+          <hr>
+          <h4>Optional Expenses</h4><br>
+          <div class = "form-group">
+            <label class="pl-2 font-weight-bold">Restaurants/Cafes</label><input type="text" class="form-control" id="food"><br>
+            <label class="pl-2 font-weight-bold">Shopping</label><input type="text" class="form-control" id="shopping"><br>
+            <label class="pl-2 font-weight-bold">Entertainment</label><input type="text" class="form-control" id="entertainment"><br>
+            <label class="pl-2 font-weight-bold">Others</label><input type="text" class="form-control" id="others">
+          </div>
+        </form>
+        <button type="submit" class="btn btn-success mt-3 btn-block shadow-sm font-weight-bold">Submit</button>
+        <br>
+      </div>
+<!--Col 2 Closed-->
+<!--Col 3-->
+      <div class = "col-sm-4">
+       <div class="jumbotron">
+          <h1>Results</h1>
+         <p class = "results">Click on Submit to see your budget results</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Col 3 Closed-->
+  <br>
+  <br>
+  <script type="text/javascript" src="script.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
